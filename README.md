@@ -1,26 +1,30 @@
-# Chepu AI Voice Assistant
+# Chepu AI Desktop Assistant
 
-Chepu AI is an open-source Hindi/Hinglish AI voice assistant for Android and PC automation.
+Chepu AI is an open-source Hindi/Hinglish AI desktop voice assistant for Windows PC automation.
 
 ## Features
 
-- Hindi/Hinglish voice command support
-- Android phone control
-- PC automation support
-- Open apps using voice
-- YouTube search automation
-- WhatsApp message draft with confirmation
-- Call assistant with confirmation
-- Screen reading support
+- Hindi/Hinglish voice commands
+- Open installed PC software using voice
+- Open websites like YouTube, Google, Gmail
+- Create files and folders
+- Open Desktop, Downloads, Documents
+- Open VS Code and coding tools
+- Basic PC automation
 - Emotional AI chat
-- Safe and privacy-friendly design
+- Voice-to-text and text-to-speech support
+- Safe confirmation before risky actions
 
-## Goal
+## Example Commands
 
-The goal of Chepu AI is to help users control Android phones and PCs through natural voice commands.
-
-Chepu AI is designed for Indian users who prefer Hindi/Hinglish voice interaction and hands-free device control.
-
+```text
+Chepu, Chrome open karo
+Chepu, YouTube open karo
+Chepu, desktop par new folder banao
+Chepu, VS Code open karo
+Chepu, downloads folder open karo
+Chepu, ek text file banao
+Chepu, mujhe Python code likh ke do
 ## Safety
 
 Chepu AI does not handle OTPs, passwords, UPI PINs, or private banking data.
