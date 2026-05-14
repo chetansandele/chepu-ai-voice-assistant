@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Someone Special</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #ff7eb3, #7b2ff7, #090015);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      color: white;
+      text-align: center;
+      padding: 18px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 460px;
+      padding: 32px 24px;
+      border-radius: 32px;
+      background: rgba(255, 255, 255, 0.13);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 0 45px rgba(255, 80, 180, 0.7);
+      z-index: 5;
+      animation: pop 0.8s ease;
+    }
+
+    @keyframes pop {
+      from {
+        transform: scale(0.75);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .step {
+      display: none;
+      animation: fadeIn 0.8s ease;
+    }
+
+    .step.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(28px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 31px;
+      margin-bottom: 16px;
+      text-shadow: 0 0 18px #ff4fc3;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.75;
+      margin: 12px 0;
+    }
+
+    button {
+      margin-top: 22px;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #ff2fb3, #ff9a9e);
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0 0 25px rgba(255, 61, 172, 0.85);
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 38px rgba(255, 255, 255, 0.9);
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 24px;
+      animation: float 6s linear infinite;
+      opacity: 0.85;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) scale(0.4) rotate(0deg);
+        opacity: 0;
+      }
+      45% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.35) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .big-love {
+      font-size: 43px;
+      color: #fff;
+      text-shadow: 0 0 25px #ff3cac, 0 0 55px #ff3cac;
+      animation: heartbeat 1.2s infinite;
+      margin-bottom: 20px;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      25% { transform: scale(1.08); }
+      50% { transform: scale(1); }
+      75% { transform: scale(1.12); }
+      100% { transform: scale(1); }
+    }
+
+    .shayari {
+      font-size: 19px;
+      color: #ffe9f8;
+      line-height: 2;
+      margin-top: 16px;
+    }
+
+    .small {
+      font-size: 14px;
+      opacity: 0.88;
+      margin-top: 18px;
+    }
+
+    .glow {
+      color: #ffe1f4;
+      font-weight: bold;
+      text-shadow: 0 0 12px #ff6fd8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+
+    <div class="step active">
+      <h1>Ek Secret Hai... 💌</h1>
+      <p>Par main seedha nahi bolunga...</p>
+      <button onclick="nextStep()">Pehla raaz kholo ✨</button>
+    </div>
+
+    <div class="step">
+      <h1>Ruko Zara... 😌</h1>
+      <p>Yeh normal baat nahi hai, isliye thoda suspense zaroori hai.</p>
+      <button onclick="nextStep()">Aage padho 💫</button>
+    </div>
+
+    <div class="step">
+      <h1>Ek Baat Sach Hai... 🌙</h1>
+      <p>Kuch log zindagi me bas milte nahi, dil me rehne lagte hain.</p>
+      <button onclick="nextStep()">Phir kya? 💖</button>
+    </div>
+
+    <div class="step">
+      <h1>Tumhari Baat Alag Hai... 🌹</h1>
+      <p>Tumhari ek simple si baat bhi mera pura mood accha kar deti hai.</p>
+      <button onclick="nextStep()">Aur bolo na 😳</button>
+    </div>
+
+    <div class="step">
+      <h1>Main Shayad Chhupa Raha Tha... 🫶</h1>
+      <p>Par har baar tumse baat karke lagta hai ki dil kuch kehna chahta hai.</p>
+      <button onclick="nextStep()">Dil kya kehna chahta hai? ❤️</button>
+    </div>
+
+    <div class="step">
+      <h1>Thoda Dar Bhi Lagta Hai... 🥺</h1>
+      <p>Kyuki jo feeling sachchi hoti hai na, usse bolne me sabse zyada himmat lagti hai.</p>
+      <button onclick="nextStep()">Himmat karo 💝</button>
+    </div>
+
+    <div class="step">
+      <h1>Agar Tum Muskura Do... 💕</h1>
+      <p>To samajh lena, meri yeh chhoti si koshish successful ho gayi.</p>
+      <button onclick="nextStep()">Main muskura rahi hu 😊</button>
+    </div>
+
+    <div class="step">
+      <h1>Bas Ek Last Button... 💘</h1>
+      <p>Iske baad jo likha hai, wo mazaak nahi... dil se hai.</p>
+      <button onclick="nextStep()">Open My Heart 💌</button>
+    </div>
+
+    <div class="step">
+      <h1 class="big-love">I Love You ❤️</h1>
+
+      <p class="shayari">
+        Tujhe paana zaroori nahi, tujhe chahna kaafi hai,<br>
+        Tere chehre ki muskurahat meri har dua se bhi saaf hai.<br><br>
+
+        Tu door hai phir bhi dil ke sabse paas lagti hai,<br>
+        Teri ek “hmm” bhi mujhe poori baat lagti hai.<br><br>
+
+        Main vaada nahi karta chand-taare tod laane ka,<br>
+        Bas itna kehta hu...  
+        <span class="glow">tere udaas hone se pehle main tujhe hasaane aaunga.</span><br><br>
+
+        Agar kabhi duniya thodi heavy lage na,<br>
+        To yaad rakhna — ek ladka hai,<br>
+        jo teri khushi ko apni jeet maanta hai. 💖
+      </p>
+
+      <p class="small">Bas hamesha aise hi muskuraati rehna... tum achchi lagti ho. 🌹</p>
+    </div>
+
+  </div>
+
+  <script>
+    let currentStep = 0;
+    const steps = document.querySelectorAll(".step");
+
+    function nextStep() {
+      steps[currentStep].classList.remove("active");
+      currentStep++;
+
+      if (currentStep < steps.length) {
+        steps[currentStep].classList.add("active");
+      }
+    }
+
+    function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.innerHTML = ["💖", "💕", "💗", "🌹", "✨", "💘"][Math.floor(Math.random() * 6)];
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.animationDuration = (Math.random() * 3 + 4) + "s";
+      heart.style.fontSize = (Math.random() * 22 + 16) + "px";
+      document.body.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 7000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+
+</body>
+</html>
